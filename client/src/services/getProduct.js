@@ -1,8 +1,8 @@
 import { PRODUCTS_LIST_ENDPOINT } from '../constants/endpoints';
 
-export const getProductsList = async (setData) => {
+export const getProduct = async (setData, slug, key) => {
   try {
-    const response = await fetch(PRODUCTS_LIST_ENDPOINT, {
+    const response = await fetch(`${PRODUCTS_LIST_ENDPOINT}/${slug}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -15,7 +15,7 @@ export const getProductsList = async (setData) => {
 
     const result = await response.json();
 
-    return setData(result);
+    return setData(result.properties[key]);
   } catch (error) {
     alert(error);
   } finally {

@@ -16,7 +16,16 @@ body {
   margin-right: auto;
 }
 
-h1 {
+.new-price,
+.old-price,
+li {
+  font-family: 'Montserrat-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1,
+h2 {
   font-family: 'Montserrat-Medium', Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -45,18 +54,12 @@ h3,
 
 .new-price {
   margin-right: 8px;
-  font-family: 'Montserrat-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 110%;
   color: #C92E20;
 }
 
 .old-price {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   text-decoration-line: line-through;

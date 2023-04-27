@@ -1,0 +1,22 @@
+.properties__menu {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1px;
+}
+
+.properties__item {
+  cursor: pointer;
+  padding: 8px 19px;
+  font-size: 11px;
+  color: #000000;
+  background: #F0EFF5;
+  line-height: 13px;
+  box-sizing: border-box;
+}
+
+.properties__item_active {
+  color: #FFFFFF;
+  background: #263475;
+}

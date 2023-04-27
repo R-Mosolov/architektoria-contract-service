@@ -33,7 +33,7 @@ export const Product = ({
             />
           </div>
         )}
-      <Link href="/products?tab=materials" style={{ textDecoration: 'none' }}>
+      <Link href="/products">
         <h3>{title}</h3>
       </Link>
       <div>
