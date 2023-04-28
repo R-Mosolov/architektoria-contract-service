@@ -18,6 +18,7 @@ body {
 
 .new-price,
 .old-price,
+.size-price,
 li {
   font-family: 'Montserrat-Regular', Arial, sans-serif;
   font-style: normal;
@@ -64,6 +65,12 @@ h3,
   line-height: 120%;
   text-decoration-line: line-through;
   color: #666666;
+}
+
+.size-price {
+  font-size: 14px;
+  line-height: 110%;
+  color: #000000;
 }
 
 .no-image {

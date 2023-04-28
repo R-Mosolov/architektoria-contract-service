@@ -5,7 +5,7 @@ import {
   LogoImg,
 } from '../assets';
 import Image from 'next/image';
-import { Footer, PageHead, Product } from '@/components';
+import { Footer, PageHead, Product, Sizes } from '@/components';
 import { getProduct } from '@/services';
 import styles from '../styles/Home.module.css';
 import detailsStyles from '../styles/ProductDetails.module.css';
@@ -76,7 +76,9 @@ const ProductDetails = () => {
           </ul>
         </nav>
         {tab === 'materials' && <h2>Рогожка премиум</h2>}
-        <ul className={styles.list}>
+        {tab === 'sizes'
+          ? <Sizes data={memoizedData} />
+          : <ul className={styles.list}>
           {memoizedData?.map(({
             title,
             image,
@@ -88,7 +90,7 @@ const ProductDetails = () => {
               price={price}
             />
           </li>)}
-        </ul>
+        </ul>}
         <Footer />
       </main>
     </>
